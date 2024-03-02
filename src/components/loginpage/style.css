@@ -1,0 +1,70 @@
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-text h1{
+    color:#36A546CC;
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:300px;
+    padding:1rem;
+}
+form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input,button{
+    display: block;
+    width:100%;
+    border-radius: 1.5rem;
+    margin-top: 1.5rem;
+    padding:0.8rem;
+    box-sizing: border-box;
+}
+form input{
+    background: #1F191966 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 3px #FFFDFD40, 3px 3px 3px #4A494947;
+    border:none;
+    outline:none;
+    color:#a5a4a4fa;
+    opacity: 1;
+}
+form button{
+    border: 2px solid #8CFF0026;
+    background: transparent linear-gradient(180deg, #00FF2580 0%, #000000 100%, #36A54680 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    color:whitesmoke;
+}
+.forgot-password{
+    text-decoration: none;
+    color:#36A546;
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+      width:90px;
+      height:90px;
+    }
+    .logo-text h1{
+        font-size: 16px;
+    }
+    form input,button{
+        width:238px;
+        height:42px;
+    }
+  }
