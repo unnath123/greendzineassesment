@@ -4,7 +4,7 @@ import './style.css'
 
 const LoginPage = () => {
   return (
-    <div>
+    <div className='main'>
         <div className="container">
             <div className="first-container">
                 <div className="logo">

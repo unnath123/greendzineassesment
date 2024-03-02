@@ -1,11 +1,13 @@
 import React from 'react'
 import LoginPage from './components/loginpage'
-import style from '../src/style.css'
+import Home from './components/homePage'
+import style from './style.css'
 
 const App = () => {
   return (
     <div>
-        <LoginPage/>
+        {/* <LoginPage/> */}
+        <Home/>
     </div>
   )
 }

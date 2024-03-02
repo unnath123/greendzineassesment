@@ -1,0 +1,86 @@
+.main-container-homepg{
+    width:100%;
+    /* height:100vh; */
+    padding:1rem;
+    box-sizing: border-box;
+    background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
+}
+.user-logo{
+    display: flex;
+    justify-content: flex-end;
+}
+.user-logo img{
+    width:80px;
+    height:80px;
+}
+.home-page-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-page-logo img{
+    width:120px;
+    height:120px;
+}
+.emp-prod-desc{
+    padding:1rem;
+    background: #1A2C2C99 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 2rem;
+    margin-top: 2rem;
+}
+.emp-prod-desc h2{
+    color: #FFFFFFB3;
+    text-align: center;
+}
+.prod-desc-main{
+    background: #1A2C2C99 0% 0% no-repeat padding-box;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    color: #FFFFFF;
+    padding:1rem 2rem;
+}
+.productivity-desc{
+    display: flex;
+    justify-content: space-between;
+}
+.progress-wrap{
+    height:1rem;
+    
+    border: 1px solid #36A546;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    overflow:hidden;
+}
+.progress{
+    height:100%;
+    background: #36A54680 0% 0% no-repeat padding-box;
+    
+}
+.emp-prod-desc-day-progress{
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-logo img{
+        width:40px;
+        height:40px;
+    }
+    .home-page-logo img{
+        width:70px;
+        height:70px;
+    }
+    .emp-prod-desc{
+        height:45px;
+        padding:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .emp-prod-desc h2{
+        font-size:18px;
+    }
+    .progress-wrap{
+        height:11px;
+    }
+  }
