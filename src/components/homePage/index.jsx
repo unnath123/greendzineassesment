@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import user from '../../images/Group 46@2x.png'
 import moptro from '../../images/moptro logo@2x.png'
 import './style.css'
+import { useNavigate } from 'react-router-dom'
 
 let infoArr = [
     {"day":"Monday", "prodpercent": "4"},
@@ -13,12 +14,13 @@ let infoArr = [
 
 const HomePage = () => {
     const [arr, setArr] = useState([...infoArr])
+    const navigate = useNavigate();
 
   return (
     <div className='main-container-homepg'>
         <div className="container-homepg">
             <div className="user-logo">
-                <img src={user} alt="user-logo" />
+                <img src={user} onClick={()=>navigate("/employeeList")} alt="user-logo" />
             </div>
             <div className="home-page-logo">
                 <img src={moptro} alt="some-logo" />
