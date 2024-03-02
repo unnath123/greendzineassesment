@@ -1,8 +1,16 @@
 import React from 'react'
 import logo from '../../images/Group 3@2x.png'
 import './style.css'
+import { useNavigate } from 'react-router-dom'
 
 const LoginPage = () => {
+    const navigate = useNavigate();
+
+    function handleSubmit(){
+        //logic for authentication
+        navigate("/home")
+    }
+
   return (
     <div className='main'>
         <div className="container">
@@ -18,9 +26,9 @@ const LoginPage = () => {
                 <form>
                     <input type="text" placeholder='Email'/>
                     <input type="text" placeholder='Password'/>
-                    <button type="submit">Login</button>
+                    <button onClick={handleSubmit} type="submit">Login</button>
                 </form>
-                <a href="#" className="forgot-password">Forgot Password?</a>
+                <a href="/employeeList" className="forgot-password">Forgot Password?</a>
             </div>
         </div>
     </div>

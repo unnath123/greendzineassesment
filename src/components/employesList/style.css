@@ -1,0 +1,86 @@
+.container-main-emp-list{
+    padding:1rem;
+    height:100vh;
+    overflow:auto;
+    background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
+}
+.user-logo-empl{
+    display: flex;
+    justify-content: flex-end;
+}
+.moptro-logo-empl,.search-box-empl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box-empl{
+    overflow: hidden;
+    margin-top: 1.5rem;
+    background-color: #5E5E5E82;
+    border-radius: 1rem;
+    border: 1px solid #595959;
+    opacity:1
+}
+.input-wrapper{
+    display: flex;
+    
+}
+.search-box-empl input{
+    width:100%;
+    background-color: #332f2f82;
+    padding:0.8rem;
+    border:none;
+    outline:none;
+    color:#FFFFFFB3;
+    
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.employees-list{
+    margin-top: 1.5rem;
+}
+.employee-data{
+    display: grid;
+    grid-template-columns: 0.3fr 0.2fr 2fr;
+    grid-template-rows: repeat(30px, 4);
+    background: #5E5E5E82 0% 0% no-repeat padding-box;
+    padding:1rem;
+    border-radius: 1rem;
+    gap:1rem;
+    margin-top: 1rem;
+}
+.emp-head{
+    color:rgb(187, 187, 187)
+}
+.emp-id{
+    color:aliceblue
+}
+.emp-dob{
+    color:rgb(214, 186, 43)
+}
+.emp-role{
+    color:#36A546
+}
+.input-wrapper{
+    width:60%;
+}
+
+@media only screen and (max-width: 600px) {
+    .user-logo-empl img{
+        width:40px;
+        height:40px;
+    }
+    .moptro-logo-empl img{
+        width:70px;
+        height:70px;
+    }
+    .search-box-empl input{
+        padding:0.5rem;
+    }
+    .employees-list{
+        font-size: 0.8rem;
+    }
+}
