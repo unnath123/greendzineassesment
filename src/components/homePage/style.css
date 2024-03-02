@@ -1,6 +1,6 @@
 .main-container-homepg{
     width:100%;
-    /* height:100vh; */
+    height:100%;
     padding:1rem;
     box-sizing: border-box;
     background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
