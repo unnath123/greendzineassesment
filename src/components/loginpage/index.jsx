@@ -37,7 +37,7 @@ const LoginPage = () => {
                     <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                     <button onClick={handleSubmit} type="submit">Login</button>
                 </form>
-                <a href="/employeeList" className="forgot-password">Forgot Password?</a>
+                <a href="#" className="forgot-password">Forgot Password?</a>
             </div>
         </div>
     </div>
