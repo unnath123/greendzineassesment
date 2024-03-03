@@ -69,6 +69,7 @@
     .home-page-logo img{
         width:70px;
         height:70px;
+        margin-top: 3rem;
     }
     .emp-prod-desc{
         height:45px;
@@ -76,11 +77,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 3rem;
     }
     .emp-prod-desc h2{
         font-size:18px;
     }
     .progress-wrap{
         height:11px;
+    }
+    .prod-desc-main{
+        margin-top: 2rem;
     }
   }
