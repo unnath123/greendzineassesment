@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../../images/Group 3@2x.png'
 import './style.css'
 import { useNavigate } from 'react-router-dom'
 
 const LoginPage = () => {
     const navigate = useNavigate();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-    function handleSubmit(){
+    function handleSubmit(e){
+        e.preventDefault();
         //logic for authentication
-        navigate("/home")
+        if(email === "test@gmail.com" && password==="12345"){
+            navigate("/home")
+        }
+        else{
+            alert("Email or Password is incorrect")
+        }
+        
     }
 
   return (
@@ -24,8 +33,8 @@ const LoginPage = () => {
             </div>
             <div className="second-container">
                 <form>
-                    <input type="text" placeholder='Email'/>
-                    <input type="text" placeholder='Password'/>
+                    <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                    <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                     <button onClick={handleSubmit} type="submit">Login</button>
                 </form>
                 <a href="/employeeList" className="forgot-password">Forgot Password?</a>
